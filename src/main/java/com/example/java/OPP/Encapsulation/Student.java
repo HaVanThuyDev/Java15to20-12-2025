@@ -1,8 +1,8 @@
-package com.example.java.OPP;
+package com.example.java.OPP.Encapsulation;
 
 import java.util.Scanner;
 
-public class Stydent {
+public class Student {
     public int msv;
     public String name;
     public  int tuoi;
@@ -38,7 +38,7 @@ public class Stydent {
         }
     }
     public static void main(String[] args) {
-        Stydent stydent = new Stydent();
+        Student stydent = new Student();
         stydent.Nhap();
         stydent.Xuat();
         stydent.DiemTB();

@@ -1,4 +1,4 @@
-package com.example.java.OPP;
+package com.example.java.OPP.Encapsulation;
 
 import java.util.Scanner;
 
