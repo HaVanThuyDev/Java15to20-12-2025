@@ -10,22 +10,20 @@ public class Main {
         momoPayment.pay(3000);
     }
 }
-//6️⃣ Interface + Đa hình
-//
-//Bài toán:
-//
-//Interface Payment
-//
-//pay(double amount)
-//
-//Các lớp:
-//
-//CashPayment
-//
-//CreditCardPayment
-//
-//MomoPayment
-//
+//Trừu tượng + Interface + Đa hình
+
+//Bài toán: Hệ thống quản lý tài khoản ngân hàng
+
+//Abstract class Account
+//balance
+//deposit()
+//withdraw() (abstract)
+
+//Interface Transferable
+//Các loại tài khoản:
+//SavingAccount
+//CheckingAccount
+
 // Yêu cầu:
-//
-//Xử lý thanh toán không cần biết loại thanh toán cụ thể
+//Mỗi tài khoản có cách rút tiền khác nhau
+//Áp dụng kiểm tra số dư
