@@ -1,9 +1,11 @@
 package com.example.java.OPP.Lever4.Store_Account;
 
 public class Product {
+    private  Category category;
     private String productName;
     private double price;
-    public Product(String productName, double price) {
+    public Product( Category category,String productName, double price) {
+        this.category = category;
         this.productName = productName;
         this.price = price;
     }
@@ -22,5 +24,9 @@ public class Product {
 
     public void setProductName(String productName) {
         this.productName = productName;
+    }
+
+    public Category getCategory() {
+        return category;
     }
 }

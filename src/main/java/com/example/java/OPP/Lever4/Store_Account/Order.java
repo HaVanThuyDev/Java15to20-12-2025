@@ -4,12 +4,18 @@ import java.util.List;
 
 public class Order {
     private Customer customer;
-    List<Product> products;
+    private  List<Product> products;
+    private Category category;
+    private  List <Category> categories;
 
-    public Order (Customer customer, List<Product> products) {
+    public Order ( List<Category> categories ,Customer customer, List<Product> products) {
+        this.categories = categories;
         this.customer = customer;
         this.products = products;
 
+    }
+    public List<Product> getProducts() {
+        return products;
     }
     public double getTotalPrice() {
         double totalPrice = 0;
@@ -17,5 +23,10 @@ public class Order {
             totalPrice += product.getPrice();
         }
         return totalPrice;
+    }
+    public void Detail (){
+        for (Product ds : products) {
+            System.out.println("Ten san pham : " + ds.getProductName()+ "Danh muc :"+ds.getCategory().getName()+ "Gia : " +ds.getPrice());
+        }
     }
 }

@@ -1,5 +1,5 @@
 package com.example.java.OPP.Lever4.Store_Account;
-import  com.example.java.OPP.Lever4.Store_Account.Role;
+import  com.example.java.OPP.Lever4.Store_Account.Role.*;
 
 public class User {
     private  Long idl;
@@ -62,6 +62,6 @@ public class User {
         this.role = role;
     }
     public void ShowRole (){
-        System.out.println("Vai tro "+role);
+        System.out.println(email+password+role);
     }
 }
